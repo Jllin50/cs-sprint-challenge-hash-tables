@@ -105,3 +105,5 @@ venv.bak/
 
 # vscode
 .vscode/
+hashtables/ex4/ex4.py
+hashtables/ex3/ex3.py
