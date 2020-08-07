@@ -1,5 +1,5 @@
 def get_indices_of_item_weights(weights, length, limit):
-    """"""
+
     dic = {}
     for i, weight in enumerate(weights):
         try:
