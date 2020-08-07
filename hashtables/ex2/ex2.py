@@ -1,4 +1,4 @@
-#  Hint:  You may not need all of these.  Remove the unused functions.
+
 class Ticket:
     def __init__(self, source, destination):
         self.source = source
@@ -6,18 +6,17 @@ class Ticket:
 
 
 def reconstruct_trip(tickets, length):
-    """
-    YOUR CODE HERE
-    """
+    route = []
     cache = {}
+
     for ticket in tickets:
         cache[ticket.source] = ticket.destination
 
-    route = []
+    
     route.append(cache["NONE"])
 
     for ticket in tickets:
-        _next = route[-1]
-        route.append(cache[_next])
+        t_next = route[-1]
+        route.append(cache[t_next])
         if route[-1] == "NONE":
             return route
